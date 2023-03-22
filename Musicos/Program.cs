@@ -20,7 +20,7 @@
           {
             Console.WriteLine($"{Nombre} esta tocando su instrumento"); //tocando su instrumento
           }
-
+  }
           class baterista: Musico
           {
                 public string bateria
@@ -57,7 +57,7 @@
             //posee una bajo
                   //Tocar(); nombre toca su bajo
           }
-  }
+  
         internal class Program
     {
    
