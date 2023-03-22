@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+ class Musico
+  {
+        public string Nombre 
+    }
+internal class Program
+    {
+   
+         private static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
