@@ -63,6 +63,18 @@
    
          private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        List<Musico> grupo= new List<Musico>();
+        grupo.Add (new Musico("UwU"));
+        grupo.Add (new bajista("Haitham", "Alhacen"));
+        grupo.Add (new baterista("Ayaka", "Aya"));
+         foreach( var m in grupo)
+         {
+               m.saluda();
+         }
+           foreach( var m in grupo)
+         {
+               m.Tocar();
+         }
+   
     }
 }
