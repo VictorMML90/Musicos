@@ -1,5 +1,5 @@
 ﻿
- class Musico
+ abstract class Musico
   {
         public string Nombre  
           {
@@ -16,12 +16,12 @@
             Console.WriteLine("Hola");
 
           }
-          public virtual void Tocar()
-          {
-            Console.WriteLine($"{Nombre} esta tocando su instrumento"); //tocando su instrumento
-          }
+          public abstract void Tocar(); //virtual
+        //  {
+            //Console.WriteLine($"{Nombre} esta tocando su instrumento"); //tocando su instrumento
+        //  }
   }
-          class baterista: Musico
+           class baterista: Musico
           {
                 public string bateria
             {
@@ -32,14 +32,14 @@
             {
                 bateria= b;
             }
-            public new void Tocar () //override
+            public override void Tocar () //override
             {
                 Console.WriteLine($"{Nombre} esta tocando su {bateria}");
             }
                   //posee una bateria
                   //Tocar(); nombre toca su bateria
           }
-          class bajista: Musico
+           class bajista: Musico
           {
             public string bajo
             {
@@ -50,7 +50,7 @@
             {
                 bajo= b;
             }
-            public new void Tocar ()
+            public override void Tocar () //new
             {
                 Console.WriteLine($"{Nombre} esta tocando su {bajo}");
             }
@@ -63,7 +63,7 @@
    
          private static void Main(string[] args)
     {
-        List<Musico> grupo= new List<Musico>();
+        List<Musico> grupo= new List<Musico>();//solo referencias
         grupo.Add (new Musico("UwU"));
         grupo.Add (new bajista("Haitham", "Alhacen"));
         grupo.Add (new baterista("Ayaka", "Aya"));
