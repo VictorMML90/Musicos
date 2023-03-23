@@ -78,3 +78,4 @@
    
     }
 }
+//las clases abtractas pueden crear referencias pero no objetos
