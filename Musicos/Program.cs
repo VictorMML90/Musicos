@@ -64,14 +64,14 @@
          private static void Main(string[] args)
     {
         List<Musico> grupo= new List<Musico>();//solo referencias
-        grupo.Add (new Musico("UwU"));
+        //grupo.Add (new Musico("UwU"));
         grupo.Add (new bajista("Haitham", "Alhacen"));
         grupo.Add (new baterista("Ayaka", "Aya"));
          foreach( var m in grupo)
          {
                m.saluda();
          }
-           foreach( var m in grupo)
+           foreach( var m in grupo)  //polimorfismo
          {
                m.Tocar();
          }
