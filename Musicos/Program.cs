@@ -11,9 +11,9 @@
           {
                Nombre= n;
           }
-          public void saluda()
+          public virtual void saluda()
           {
-            Console.WriteLine("Hola");
+            Console.WriteLine("Hola, soy {Nombre}");
 
           }
           public abstract void Tocar(); //virtual
