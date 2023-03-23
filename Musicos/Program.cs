@@ -32,7 +32,7 @@
             {
                 bateria= b;
             }
-            public override void Tocar () //override
+            public new void Tocar () //override
             {
                 Console.WriteLine($"{Nombre} esta tocando su {bateria}");
             }
@@ -50,7 +50,7 @@
             {
                 bajo= b;
             }
-            public override void Tocar ()
+            public new void Tocar ()
             {
                 Console.WriteLine($"{Nombre} esta tocando su {bajo}");
             }
